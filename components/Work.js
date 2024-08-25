@@ -51,8 +51,8 @@ const Work = () => {
                             <Grid item xs={12} sx={{}}>
                                 <Grid container>
                                     {
-                                        images.map((ele) => (
-                                            <Grid item xs={6} sx={{ cursor: 'pointer' }}>
+                                        images.map((ele,i) => (
+                                            <Grid key={i} item xs={6} sx={{ cursor: 'pointer' }}>
                                                 <Box
                                                     sx={{
                                                         position: "relative",
