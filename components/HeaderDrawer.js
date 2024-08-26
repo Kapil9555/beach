@@ -1,11 +1,8 @@
 'use client'
-import React from 'react';
-import { Box, Button, Grid, IconButton, Typography } from '@mui/material';
+import logo from '@/assests/first-films-high-resolution-logo.png';
+import { Box, Grid, Typography } from '@mui/material';
 import Image from 'next/image';
-import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
 import { useRouter } from 'next/navigation';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import logo from '@/assests/first-films-high-resolution-logo.png'
 
 
 

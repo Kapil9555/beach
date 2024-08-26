@@ -1,9 +1,5 @@
 'use client'
-import { Box, Container, Grid, Typography } from '@mui/material';
-import React from 'react';
-import HeaderHome from './HeaderHome';
-import HeaderDrawer from './HeaderDrawer';
-import About from './About';
+import { Box, Grid, Typography } from '@mui/material';
 
 const Home = () => {
     return (

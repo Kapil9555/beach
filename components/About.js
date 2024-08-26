@@ -1,28 +1,14 @@
 'use client'
-import { Box, Container, Grid, IconButton, Menu, MenuItem, Typography } from '@mui/material'
-import React, { useState } from 'react'
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import { Box, Grid, Typography } from '@mui/material';
 import Image from 'next/image';
-import foodstall from "@/assests/foodStall.png"
-import googleplay from "@/assests/playstore.png"
-// import Footer from './Footer';
-import food1 from "@/assests/img1.jpg"
-import food2 from "@/assests/img2.jpg"
-import food3 from "@/assests/img3.jpg"
-import food4 from "@/assests/food3.jpg"
-import food5 from "@/assests/img5.jpg"
-
-// import food1 from "../../public/food1.jpg"
-
-import QrCode2Icon from '@mui/icons-material/QrCode2';
+import food1 from "@/assests/img1.jpg";
+import food2 from "@/assests/img2.jpg";
+import food3 from "@/assests/img3.jpg";
+import food5 from "@/assests/img5.jpg";
 import { useRouter } from 'next/navigation';
-import Link from 'next/link';
 
 const About = () => {
     const router = useRouter()
-
-
-
     return (
         <Grid container justifyContent={'center'} sx={{ bgcolor: 'black' }}>
             <Grid item container justifyContent={'center'} lg={10} md={10} sm={12} xs={12}>
@@ -135,12 +121,12 @@ const About = () => {
                                             <Typography variant='h5' sx={{ color: "#E8E8E8", fontSize: "25px", mt: '7px' }}>
                                                 <span style={{ backgroundColor: '#616161', padding: '2px 10px', borderRadius: '6px' }}>1</span>  Fortune 200 Brands
                                             </Typography>
-                                            <Typography variant='body2' sx={{ color: "#C8C8C8", fontSize: '20px', lineHeight: '30px', mt: '7px' }}>We've had the
+                                            <Typography variant='body2' sx={{ color: "#C8C8C8", fontSize: '20px', lineHeight: '30px', mt: '7px' }}>We have had the
                                                 privilege of
                                                 collaborating with
-                                                some of the world's
+                                                some of the world
                                                 most recognized
-                                                brands, delivering
+                                                brands delivering
                                                 captivating content
                                                 that resonates with
                                                 their target audiences.</Typography>
@@ -151,7 +137,7 @@ const About = () => {
                                             </Typography>
                                             <Typography variant='body2' sx={{ color: "#C8C8C8", fontSize: '20px', lineHeight: '30px', mt: '7px' }}>Our team thrives on
                                                 working with
-                                                ambitious, forwardthinking companies
+                                                ambitious forward thinking companies
                                                 to bring their ideas
                                                 to life through
                                                 visually stunning
@@ -162,7 +148,7 @@ const About = () => {
                                             <Typography variant='h5' sx={{ color: "#E8E8E8", fontSize: "25px", mt: '7px' }}>
                                                 <span style={{ backgroundColor: '#616161', padding: '2px 10px', borderRadius: '6px' }}>3</span>Non-Profit Organizations
                                             </Typography>
-                                            <Typography variant='body2' sx={{ color: "#C8C8C8", fontSize: '20px', lineHeight: '30px', mt: '7px' }}>We're proud to
+                                            <Typography variant='body2' sx={{ color: "#C8C8C8", fontSize: '20px', lineHeight: '30px', mt: '7px' }}>We are proud to
                                                 support non-profit
                                                 organizations in their
                                                 efforts to raise
@@ -190,12 +176,12 @@ const About = () => {
                                             Creative Visionaries
                                         </Typography>
                                         <Typography variant='body2' sx={{ color: "#C8C8C8", fontSize: '20px', lineHeight: '30px', mt: '7px' }}>Our team of talented
-                                            directors,
+                                            directors
                                             cinematographers, and
                                             editors bring a wealth of
                                             experience and a
                                             passion for pushing the
-                                            boundaries of what's
+                                            boundaries of what
                                             possible in video
                                             production.</Typography>
                                     </Grid>
@@ -218,7 +204,7 @@ const About = () => {
                                         <Typography variant='body2' sx={{ color: "#C8C8C8", fontSize: '20px', lineHeight: '30px', mt: '7px' }}>Our meticulous project
                                             managers oversee every
                                             aspect of the production
-                                            process, ensuring
+                                            process ensuring
                                             seamless coordination
                                             and on-time delivery.</Typography>
                                     </Grid>

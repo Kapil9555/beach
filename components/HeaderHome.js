@@ -1,12 +1,11 @@
 'use client'
+import logo from '@/assests/first-films-high-resolution-logo.png'
 import { Box, Grid, IconButton } from '@mui/material'
 import Image from 'next/image'
-import React, { useState } from 'react'
-import logo from '@/assests/first-films-high-resolution-logo.png'
-import MenuIcon from '@mui/icons-material/Menu';
-import { CgMenu } from "react-icons/cg";
-import RightDrawer from './RightDrawer'
 import { useRouter } from 'next/navigation'
+import { useState } from 'react'
+import { CgMenu } from "react-icons/cg"
+import RightDrawer from './RightDrawer'
 
 const HeaderHome = () => {
   const router = useRouter()

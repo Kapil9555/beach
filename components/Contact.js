@@ -1,26 +1,12 @@
 'use client'
-import { Box, Container, Grid, IconButton, Menu, MenuItem, Typography } from '@mui/material'
-import React, { useState } from 'react'
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import { Box, Grid, Typography } from '@mui/material';
 import Image from 'next/image';
-import foodstall from "@/assests/foodStall.png"
-import googleplay from "@/assests/playstore.png"
-// import Footer from './Footer';
-import food1 from "@/assests/img1.jpg"
-import food2 from "@/assests/img2.jpg"
-import food3 from "@/assests/img3.jpg"
-import food4 from "@/assests/food3.jpg"
-import food5 from "@/assests/img5.jpg"
-
-// import food1 from "../../public/food1.jpg"
-
-import QrCode2Icon from '@mui/icons-material/QrCode2';
-import { useRouter } from 'next/navigation';
-import Link from 'next/link';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import food5 from "@/assests/img5.jpg";
 import CallIcon from '@mui/icons-material/Call';
-import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import { useRouter } from 'next/navigation';
 
 const Contact = () => {
     const router = useRouter()

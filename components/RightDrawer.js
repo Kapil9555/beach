@@ -1,11 +1,9 @@
 'use client'
-import { Box, Button, Drawer, Grid, IconButton, Typography } from '@mui/material';
-import { useRouter } from 'next/navigation';
-import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
-import { useContext, useState } from 'react';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import logo from '@/assests/first-films-high-resolution-logo.png'
+import logo from '@/assests/first-films-high-resolution-logo.png';
+import { Box, Drawer, Grid, Typography } from '@mui/material';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 
 
 

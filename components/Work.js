@@ -1,29 +1,17 @@
 'use client'
-import { Box, Container, Grid, IconButton, Menu, MenuItem, Typography } from '@mui/material'
-import React, { useState } from 'react'
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import { Box, Grid, Typography } from '@mui/material';
 import Image from 'next/image';
-import foodstall from "@/assests/foodStall.png"
-import googleplay from "@/assests/playstore.png"
 // import Footer from './Footer';
-import photo1 from "@/assests/photo1.jpg"
-import photo2 from "@/assests/photo2.jpg"
-import photo3 from "@/assests/photo3.jpg"
-import photo4 from "@/assests/photo4.jpg"
-import photo5 from "@/assests/photo1.jpg"
-import photo6 from "@/assests/photo8.jpeg"
-import photo7 from "@/assests/photo7.jpg"
-import photo8 from "@/assests/photo8.jpeg"
+import { default as photo1, default as photo5 } from "@/assests/photo1.jpg";
+import photo2 from "@/assests/photo2.jpg";
+import photo3 from "@/assests/photo3.jpg";
+import photo4 from "@/assests/photo4.jpg";
+import photo7 from "@/assests/photo7.jpg";
+import { default as photo6, default as photo8 } from "@/assests/photo8.jpeg";
 
 // import food1 from "../../public/food1.jpg"
 
-import QrCode2Icon from '@mui/icons-material/QrCode2';
 import { useRouter } from 'next/navigation';
-import Link from 'next/link';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import CallIcon from '@mui/icons-material/Call';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
 
 const Work = () => {
     const router = useRouter()
@@ -55,8 +43,8 @@ const Work = () => {
                         <Grid item xs={12} sx={{mt:'20px'}}>
                             <Grid container>
                                 {
-                                    images.map((ele) => (
-                                        <Grid item xs={12} sm={12} md={6} lg={6} sx={{ cursor: 'pointer' }}>
+                                    images.map((ele,i) => (
+                                        <Grid key={i} item xs={12} sm={12} md={6} lg={6} sx={{ cursor: 'pointer' }}>
                                             <Box
                                                 sx={{
                                                     position: "relative",
