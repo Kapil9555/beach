@@ -1,22 +1,20 @@
 'use client'
-import { Box, Grid } from '@mui/material'
-import React from 'react'
+import { Box, Grid } from '@mui/material';
 import Image from 'next/image';
-import Carousel from 'react-multi-carousel';
 
-import e1 from "@/assests/e1.png"
-import e2 from "@/assests/e2.png"
-import e3 from "@/assests/e3.png"
-import e4 from "@/assests/e4.png"
-import e5 from "@/assests/e5.png"
-import e6 from "@/assests/e6.png"
-import e7 from "@/assests/e7.png"
-import e8 from "@/assests/e8.png"
-import e9 from "@/assests/e9.png"
-import e10 from "@/assests/e10.png"
-import e11 from "@/assests/e11.png"
-import e12 from "@/assests/e12.png"
-import './master.css'
+import e1 from "@/assests/e1.png";
+import e10 from "@/assests/e10.png";
+import e11 from "@/assests/e11.png";
+import e12 from "@/assests/e12.png";
+import e2 from "@/assests/e2.png";
+import e3 from "@/assests/e3.png";
+import e4 from "@/assests/e4.png";
+import e5 from "@/assests/e5.png";
+import e6 from "@/assests/e6.png";
+import e7 from "@/assests/e7.png";
+import e8 from "@/assests/e8.png";
+import e9 from "@/assests/e9.png";
+import './master.css';
 
 const Awards = () => {
 
