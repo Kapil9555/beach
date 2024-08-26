@@ -1,16 +1,16 @@
 'use client'
-import { Box, Grid, Typography } from '@mui/material';
+import { Box, Container, Grid, Typography } from '@mui/material';
 import React from 'react';
 import HeaderHome from './HeaderHome';
+import HeaderDrawer from './HeaderDrawer';
+import About from './About';
 
 const Home = () => {
     return (
-        <Box sx={{ position: 'relative', height: '100vh', overflow: 'hidden', margin: 0, padding: 0, }}>
-            {/* HeaderHome Component */}
-            <Box sx={{ position: 'absolute', top: 0, width: '100%',zIndex: 10 }} onClick={() => { console.log("Header clicked") }}>
-                <HeaderHome />
-            </Box>
-
+        <>
+            <Grid container sx={{position:'relative',minHeight:{lg:'80vh',md:'80vh',sm:'50vh',xs:'50vh'}}}>
+                <Grid item xs={12} sx={{}}>
+                  <Box sx={{ overflow: 'hidden', margin: 0, padding: 0}}>
             {/* Background Video */}
             <Box 
                 component="video" 
@@ -26,7 +26,8 @@ const Home = () => {
                     width: '100%', 
                     height: '100%', 
                     objectFit: 'cover', 
-                    zIndex: 0 
+                    zIndex: 0 ,
+                   boxSizing:'border-box'
                 }} 
             />
 
@@ -49,20 +50,20 @@ const Home = () => {
                 sx={{ 
                     height: '100%', 
                     zIndex: 2, 
-                    position: 'relative', 
+                    position: 'absolute', 
                     color: 'white',
                     display: 'flex',
                     justifyContent: 'center',
-                    alignItems: 'center'
-                }}
-            >
+                    alignItems: 'center',
+                    }}>
                 {/* Add your centered content here */}
-                <Grid item xs={12}>
-                    <Typography 
-                        variant="h1" 
+                <Grid item xs={12} sx={{}}>
+                    <Typography
+                      
                         sx={{ 
                             animation: 'move-text 10s linear infinite', 
-                            whiteSpace: 'nowrap'
+                            whiteSpace: 'nowrap',
+                            fontSize:{lg:'40px',md:'40px',sm:'30px',xs:'30px'}
                         }}
                     >
                         First Films Production
@@ -79,7 +80,10 @@ const Home = () => {
                     }
                 `}
             </style>
-        </Box>
+                  </Box>
+                </Grid>
+            </Grid>
+        </>
     );
 };
 

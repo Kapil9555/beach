@@ -29,18 +29,16 @@ const Contact = () => {
 
     return (
         <>
-            <Container maxWidth={'xl'} disableGutters>
-
-                <Grid container justifyContent={'center'} sx={{ p: "10px", bgcolor: 'black',minHeight:'100vh' }}>
+                <Grid container justifyContent={'center'} sx={{ p: "10px", bgcolor: 'black',minHeight:{lg:'100vh',md:'100vh',sm:'fit-content',xs:'fit-content'} }}>
                     <Grid item lg={10} md={10} sm={10} xs={11.5} sx={{ mb: "25px" }}>
-                        <Grid container sx={{ mt: "40px" }}>
+                        <Grid container sx={{ mt:{lg:"40px",md:'40px',sm:'20px',xs:'0px'} }}>
 
-                            <Grid item xs={12} sx={{ mt: "20px" }}>
+                            <Grid item xs={12} sx={{ mt: {lg:"20px",md:'20px',sm:'20px',xs:'0px'} }}>
                                 <Grid container>
 
                                 <Grid item xs={12}>
                                         <Box sx={{ pr: "15px" }}>
-                                            <Typography align='center' variant='h2' sx={{ color: "#E8E8E8", fontSize: 50, fontWeight: 600 }}>
+                                            <Typography align='center' variant='h2' sx={{ color: "#E8E8E8", fontSize:{lg:40,md:40,sm:35,xs:30}, fontWeight: 600 }}>
                                                Contact Us
                                             </Typography>
                                             
@@ -104,7 +102,6 @@ const Contact = () => {
                     </Grid>
                   
                 </Grid>
-            </Container>
         </>
     )
 }

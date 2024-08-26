@@ -1,12 +1,15 @@
 'use client'
-import logo from '@/assests/first-films-high-resolution-logo.png';
-import { Box, Grid, Typography } from '@mui/material';
+import React from 'react';
+import { Box, Button, Grid, IconButton, Typography } from '@mui/material';
 import Image from 'next/image';
+import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
 import { useRouter } from 'next/navigation';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import logo from '@/assests/first-films-high-resolution-logo.png'
 
 
 
-const HeaderDrawer = () => {
+const HeaderDrawer = ({handleScrollComp}) => {
   const router = useRouter()
 
 
@@ -17,21 +20,21 @@ const HeaderDrawer = () => {
         <Grid container alignItems={'center'} justifyContent={'space-between'} sx={{height:"100%"}}>
             <Grid item xs={3} sm={4} md={2} lg={2} sx={{display:"flex",height:"100%",alignItems:"center",justifyContent:{xs:"center",sm:"center",md:"left",lg:"left"}}} onClick={()=>{router.push('/')}}>
                <Box sx={{height:{lg:"60px",md:"60px",sm:"50px",xs:"40px"},width:{lg:"100px",md:"100px",sm:"80px",xs:"60px"},position:"relative"}}>
-                  <Image src={logo} alt='logo'  style={{position:"",height:"auto",width:"100%",cursor:'pointer'}} />
+                  <Image src={logo} alt='logo'  style={{position:"",height:"100%",width:"100%",cursor:'pointer'}} />
                </Box>
             </Grid>
-            <Grid item xs={6} sm={6} md={4} lg={4} sx={{display:{lg:"block",md:"block",sm:"none",xs:"none"}}}>
+            <Grid item xs={8} sm={7} md={4} lg={4} sx={{}}>
              <Box sx={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-                <Typography sx={{fontSize:"14px",color:'white',fontWeight:"600",cursor:"pointer",'&:hover':{color:"#007bff"}}} onClick={()=>{router.push('/')}}>
+                <Typography sx={{fontSize:"14px",color:'white',fontWeight:"600",cursor:"pointer",'&:hover':{color:"#007bff"}}} onClick={()=>{handleScrollComp('home')}}>
                     Home
                 </Typography>
-                <Typography sx={{fontSize:"14px",color:'white',fontWeight:"600",cursor:"pointer",'&:hover':{color:"#007bff"}}}  onClick={()=>{router.push('/about')}}>
+                <Typography sx={{fontSize:"14px",color:'white',fontWeight:"600",cursor:"pointer",'&:hover':{color:"#007bff"}}}  onClick={()=>{handleScrollComp('about')}}>
                     About
                 </Typography>
-                <Typography sx={{fontSize:"14px",color:'white',fontWeight:"600",cursor:"pointer",'&:hover':{color:"#007bff"}}}   onClick={()=>{router.push('/work')}}>
+                <Typography sx={{fontSize:"14px",color:'white',fontWeight:"600",cursor:"pointer",'&:hover':{color:"#007bff"}}}   onClick={()=>{handleScrollComp('work')}}>
                     Work
                 </Typography>
-                <Typography sx={{fontSize:"14px",color:'white',fontWeight:"600",cursor:"pointer",'&:hover':{color:"#007bff"}}} onClick={()=>{router.push('/contactus')}}>
+                <Typography sx={{fontSize:"14px",color:'white',fontWeight:"600",cursor:"pointer",'&:hover':{color:"#007bff"}}} onClick={()=>{handleScrollComp('contact')}}>
                     Contact
                 </Typography>
                

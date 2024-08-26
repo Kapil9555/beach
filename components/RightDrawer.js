@@ -12,6 +12,7 @@ import Image from 'next/image';
 const RightDrawer = ({drawerOpen, setDrawerOpen }) => {
     const router = useRouter();
     const [showBorder,setShowBorder]=useState('');
+    const [shareModal ,setShareModal]=useState({open:false})
     const listArr = [{title:'Home',link:"/"},{title:'About',link:"/about"},{title:'Work',link:"/work"},{title:'Contact',link:"/contactus"}]
     
    const handleSideBarMenu =(item)=>{

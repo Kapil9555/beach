@@ -42,54 +42,58 @@ const Work = () => {
 
     return (
         <>
-            <Container maxWidth={'xl'} disableGutters sx={{}}>
 
-                <Grid container justifyContent={'center'} sx={{ bgcolor: 'black', minHeight: '100vh' }}>
-                    <Grid item xs={12} sx={{ mb: "25px" }}>
-                        <Grid container sx={{}}>
 
-                            <Grid item xs={12} sx={{}}>
-                                <Grid container>
-                                    {
-                                        images.map((ele,i) => (
-                                            <Grid key={i} item xs={6} sx={{ cursor: 'pointer' }}>
-                                                <Box
-                                                    sx={{
-                                                        position: "relative",
-                                                        height: { lg: "400px", md: "350px", sm: "300px", xs: "230px" },
-                                                        width: '100%',
-                                                        overflow: 'hidden', // Ensure the image stays within the box
-                                                        '&:hover img': { // Target the image on hover
-                                                            transform: 'scale(1.1)', // Scale the image
-                                                            transition: 'transform 0.7s ease-in-out' // Slower transition
-                                                        }
+            <Grid container justifyContent={'center'} sx={{ bgcolor: 'black', pt: '20px' }}>
+                <Grid item xs={11} md={10} lg={10} sm={11}  sx={{ mb: "25px" }}>
+                    <Grid container sx={{}}>
+                        <Grid item xs={12} sx={{ mt: '20px' }}>
+                            <Typography  variant='h1' sx={{ color: "#E8E8E8", fontSize: 40, fontWeight: 600 }}>
+                                 Our Work
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={12} sx={{mt:'20px'}}>
+                            <Grid container>
+                                {
+                                    images.map((ele) => (
+                                        <Grid item xs={12} sm={12} md={6} lg={6} sx={{ cursor: 'pointer' }}>
+                                            <Box
+                                                sx={{
+                                                    position: "relative",
+                                                    height: { lg: "400px", md: "350px", sm: "300px", xs: "230px" },
+                                                    width: '100%',
+                                                    overflow: 'hidden', // Ensure the image stays within the box
+                                                    '&:hover img': { // Target the image on hover
+                                                        transform: 'scale(1.1)', // Scale the image
+                                                        transition: 'transform 0.7s ease-in-out' // Slower transition
+                                                    }
+                                                }}
+                                            >
+                                                <Image
+                                                    src={ele?.img}
+                                                    alt='foodstall'
+                                                    style={{
+                                                        height: "100%",
+                                                        width: "100%",
+                                                        objectFit: 'cover', // Ensure the image covers the box
+                                                        transition: 'transform 0.5s ease-in-out' // Slower transition
                                                     }}
-                                                >
-                                                    <Image
-                                                        src={ele?.img}
-                                                        alt='foodstall'
-                                                        style={{
-                                                            height: "100%",
-                                                            width: "100%",
-                                                            objectFit: 'cover', // Ensure the image covers the box
-                                                            transition: 'transform 0.5s ease-in-out' // Slower transition
-                                                        }}
-                                                    />
-                                                </Box>
-                                            </Grid>
+                                                />
+                                            </Box>
+                                        </Grid>
 
 
-                                        ))
-                                    }
-                                </Grid>
-
-
+                                    ))
+                                }
                             </Grid>
+
+
                         </Grid>
                     </Grid>
-
                 </Grid>
-            </Container>
+
+            </Grid>
+
         </>
     )
 }
